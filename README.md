@@ -1,4 +1,6 @@
-bldr-blocks
+Bldr Blocks
 ===========
 
-Bldr Blocks - Recipes for Bldr
+Blocks for Bldr.
+
+This is going to be a library of compiled recipes or pre-built workflows.
