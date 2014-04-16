@@ -1,0 +1,25 @@
+#search-box {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#search {
+    width: 99%;
+    border-radius: 3px;
+    height: 45px;
+    border: 1px solid #ccc;
+    font-size: 22px;
+    padding-left: 10px;
+    line-height: normal;
+    box-shadow: 2px 2px 2px #AAA;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+
+#search:focus {
+    box-shadow: 0 0 5px rgb(247,170,92);
+    border: 1px solid rgb(247,170,92);
+}

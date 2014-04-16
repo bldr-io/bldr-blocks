@@ -1,0 +1,42 @@
+bldr:
+    name: bldr/blocks.bldr.io
+    description: Bldr Blocks Website
+
+    profiles:
+        default:
+            tasks:
+                - prepare
+                - lint
+                - phpcs
+                - test
+        server:
+            tasks:
+                - server
+        dev:
+            tasks:
+                - test
+                - watch
+
+    tasks:
+        server:
+            calls:
+                -
+                    type: exec
+                    executable: php
+                    arguments:
+                        - -S
+                        - 127.0.0.1:8080
+        test:
+            calls:
+                -
+                    type: exec
+                    executable: php
+                    arguments:
+                        - bin/phpunit
+        watch:
+            calls:
+                -
+                    type: watch
+                    src:
+                        - { path: [src, tests], recursive: true }
+                    task: test

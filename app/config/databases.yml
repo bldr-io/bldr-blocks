@@ -1,0 +1,7 @@
+default:
+    driver: pdo_mysql
+    host: localhost
+    dbname: bldr.io
+    user: bldrBlocks
+    password: WPUAg7hO78857Uq9Vh1yarQ6a0q490q8u
+    charset: utf8

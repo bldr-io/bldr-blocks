@@ -1,0 +1,11 @@
+login:
+    path: /login
+    defaults: { _controller: Bldr\Blocks\Controller\SecurityController::loginAction }
+login_check:
+    path: /login_check
+logout:
+    path: /logout
+
+dashboard:
+    path: /
+    defaults: { _controller: Bldr\Blocks\Controller\IndexController::dashboardAction }

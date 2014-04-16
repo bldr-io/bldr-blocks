@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * This file is part of blocks.bldr.io
+ *
+ * (c) Aaron Scherer <aequasi@gmail.com>
+ *
+ * This source file is subject to the license that is bundled
+ * with this source code in the file LICENSE
+ */
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+$app = new \Bldr\Blocks\Application(new \Aequasi\Environment\Environment);
+$app->initialize();
+
+$console = new \Bldr\Blocks\Console($app);
+
+$console->run();
